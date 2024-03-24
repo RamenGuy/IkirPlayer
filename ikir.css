@@ -1,0 +1,78 @@
+.songtitle {
+  background-color: var(--bg);
+  color: var(--accent);
+  /*font-family: "Times New Roman", Times, serif;*/
+  text-align: center;
+  text-shadow: var(--badge-glow);
+  /*border: 1px solid darkorchid;*/
+    -webkit-background-clip: text;
+}
+.duration {
+  background-color: var(--bg);
+  color: var(--accent);
+  /*font-family: "Times New Roman", Times, serif;*/
+  text-align: center;
+  text-shadow: var(--badge-glow);
+  /*border: 1px solid darkorchid;*/
+    -webkit-background-clip: text;
+}
+.ikirwrap {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  bottom:0;
+  justify-content: center;
+
+}
+.ikirplaylist {
+  position: relative;
+  line-height: 2;
+
+  overflow:auto; 
+  height: 256px;
+  width: 512px;
+  text-align: center;
+  display: inline-block;
+}
+.controlbutton {
+  padding     : 0px 20px;
+  line-height: 32px;
+  width: 16px;
+  height: 32px;
+  background: var(--bg);
+  display: inline-block;
+  box-shadow  : none;
+  border: 1px solid var(--accent);
+}
+
+.controlbutton:hover {
+  background: var(--bg-light);
+  box-shadow  : var(--badge-glow);
+}
+
+.controlimage {
+  width: 8px;
+  height: 16px;
+  line-height: 16px;
+  vertical-align: middle;
+  position: relative;
+}
+.controlbutton:active .controlimage {
+  transform: scale(0.75, 0.75); 
+}
+.songbutton {
+  line-height: 2;
+  background: var(--bg);
+  display: inline-block;
+  box-shadow  : none;
+  border: 1px solid var(--accent);
+  width: 100%;
+  position: relative;
+}
+.songbutton:hover {
+  background: var(--bg-light);
+  box-shadow  : var(--badge-glow);
+}
+iframe {
+  z-index: -10; 
+}
