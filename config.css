@@ -1,0 +1,10 @@
+:root {
+    /* Colours */
+    --bg                : black;
+    --bg-light          : #191919;
+    --accent            : darkorchid;
+    --accent-bright     : orchid;
+    --badge-glow          : 0 0 10px var(--accent);
+    --badge-border        : 1px solid var(--accent-bright);
+}
+
