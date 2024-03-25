@@ -3,7 +3,14 @@ tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-playlist = JSON.parse(document.currentScript.getAttribute('playlist'));
+//playlist = JSON.parse(document.currentScript.getAttribute('playlist'));
+fetch("playlist.txt")
+  .then((res) => res.text())
+  .then((text) => {
+      playlist = JSON.parse(text);
+   })
+  .catch((e) => console.error(e));
+
 autoplay = JSON.parse(document.currentScript.getAttribute('autoplay'));
 shuffle = JSON.parse(document.currentScript.getAttribute('shuffle'));
 
@@ -119,7 +126,8 @@ controller.init = function() {
   title.className = "songtitle";
   title.innerText = "Not Playing";
   elem.appendChild(title);
-
+  
+  
   var volume = document.createElement("input");
   volume.className = "volumeslider";
   volume.type = "range";
@@ -134,6 +142,7 @@ controller.init = function() {
   dura.className = "duration";
   dura.innerText = "--:-- / --:--";
   elem.appendChild(dura);
+  
   
   var list = document.createElement("div");
   list.className = "ikirplaylist";
@@ -207,9 +216,9 @@ controller.updateSong = function () {
   title.innerText = controller.playlist[controller.songIndex].title;
 }
 
-controller.chooseSong = function (e) {
-  console.log(e);
-  controller.songIndex = e;
+controller.chooseSong = function (index) {
+  console.log(index);
+  controller.songIndex = index;
   if (controller.autoplay) {
     player.loadVideoById(controller.playlist[controller.songIndex].url.replace("https://www.youtube.com/watch?v=",""));
   } else {

@@ -28,12 +28,15 @@
   position: relative;
   line-height: 2;
 
-  overflow:auto; 
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-y: auto; /* Add vertical scrollbar */
   height: 256px;
   width: 512px;
   text-align: center;
   display: inline-block;
+  box-shadow: var(--badge-glow);
 }
+
 .controlbutton {
   padding     : 0px 20px;
   line-height: 32px;
@@ -47,7 +50,7 @@
 
 .controlbutton:hover {
   background: var(--bg-light);
-  box-shadow  : var(--badge-glow);
+  box-shadow  : inset var(--badge-glow);
 }
 
 .controlimage {
@@ -65,17 +68,18 @@
   background: var(--bg);
   display: inline-block;
   box-shadow  : none;
-  border: 1px solid var(--accent);
+  /*border: 1px solid var(--accent);*/
   width: 100%;
   position: relative;
 }
 .songbutton:hover {
   background: var(--bg-light);
-  box-shadow  : var(--badge-glow);
+  box-shadow  : inset var(--badge-glow);
 }
 iframe {
   z-index: -10; 
 }
+
 .volumeslider {
   -webkit-appearance: none;
   width: 20%;
@@ -97,10 +101,18 @@ iframe {
   width: 25px;
   height: 25px;
   border-radius: 50%; 
-  background: var(--accent);
+  background: var(--bg);
   cursor: pointer;
+  outline: var(--badge-border);
+  box-shadow: var(--badge-glow);
+  transition: background 0.5s;
 }
-
+.volumeslider::-webkit-slider-thumb:hover {
+  background: var(--accent);
+}
+.volumeslider::-webkit-slider-thumb:active {
+  background: var(--accent-bright);
+}
 .volumeslider::-moz-range-thumb {
   width: 25px;
   height: 25px;
