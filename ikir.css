@@ -76,3 +76,35 @@
 iframe {
   z-index: -10; 
 }
+.volumeslider {
+  -webkit-appearance: none;
+  width: 20%;
+  position: relative;
+  height: 15px;
+  border-radius: 5px;  
+  background: var(--bg-light);
+  outline: none;
+  text-align: center;
+  display: inline-block;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.volumeslider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: var(--accent);
+  cursor: pointer;
+}
+
+.volumeslider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: var(--accent);
+  cursor: pointer;
+}
