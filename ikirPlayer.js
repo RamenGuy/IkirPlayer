@@ -132,8 +132,10 @@ controller.init = function() {
   //var playlistString = controller.playliststring();
   for (var i = 0; i < controller.playlist.length; i++) {
     let line = document.createElement("a");
+    line.id = "song-button-" + i;
     line.className = "songbutton"
     line.innerText = controller.playlist[i].title;
+    line.onclick = function() {controller.chooseSong(line.id.replace("song-button-",""));};
     list.appendChild(line);
   }
 }
