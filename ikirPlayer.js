@@ -119,6 +119,16 @@ controller.init = function() {
   title.className = "songtitle";
   title.innerText = "Not Playing";
   elem.appendChild(title);
+
+  var volume = document.createElement("input");
+  volume.className = "volumeslider";
+  volume.type = "range";
+  volume.min = "0";
+  volume.max = "100";
+  volume.oninput = function() {
+    player.setVolume(this.value);
+  }
+  elem.appendChild(volume);
   
   var dura = document.createElement("p");
   dura.className = "duration";
