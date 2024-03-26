@@ -1,0 +1,80 @@
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: Consolas;
+  text-align: start;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  -webkit-background-clip: text;
+}
+
+a:link {
+    text-decoration: none;
+    color: var(--accent-bright);
+}
+
+a:hover {
+    text-shadow : var(--link-glow);
+}
+
+a:active {
+    color : var(--accent);
+}
+button {
+  background-color: var(--bg);
+  /*color: var(--accent);*/
+    font-family: Consolas;
+      font-size: 16px;
+  /*font-family: "Times New Roman", Times, serif;*/
+  text-align: right;
+  text-shadow: var(--shimmer-glow);
+  cursor: pointer;
+  border: none;
+  /*border: 5px groove var(--border);*/
+  background: -webkit-linear-gradient(var(--accent), #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    transition: background .5s;
+}
+
+button:hover {
+    /*color: var(--accent-bright);*/
+    /*border: 5px groove var(--accent);*/
+    background: -webkit-linear-gradient(var(--accent-bright), #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background .5s;
+      text-shadow: var(--shimmer-glow-bright);
+}
+button:active {
+    /*color: var(--accent-bright);*/
+    /*border: 5px inset var(--accent-bright);*/
+    background: -webkit-linear-gradient(var(--accent-bright), #fff);
+    -webkit-background-clip: text;
+    text-shadow: var(--shimmer-glow-bright);
+    -webkit-text-fill-color: transparent;
+    transition: background .5s;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+  position: relative;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--accent); 
+  border-radius: 10px;
+  transition: background .5s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-bright);
+}
