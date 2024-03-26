@@ -42,14 +42,14 @@
   line-height: 32px;
   width: 16px;
   height: 32px;
-  background: var(--bg);
+  background: white;
   display: inline-block;
   box-shadow  : none;
   border: 1px solid black;
 }
 
 .controlbutton:hover {
-  background: var(--bg-light);
+  background: gray;
   /*box-shadow  : inset var(--badge-glow);*/
 }
 
@@ -65,16 +65,16 @@
 }
 .songbutton {
   line-height: 2;
-  background: var(--bg);
+  background: white;
   display: inline-block;
   box-shadow  : none;
-  color: var(--fg);
+  color: black;
   /*border: 1px solid var(--accent);*/
   width: 100%;
   position: relative;
 }
 .songbutton:hover {
-  background: var(--bg-light);
+  background: gray;
 }
 iframe {
   z-index: -10; 
