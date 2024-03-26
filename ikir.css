@@ -1,20 +1,20 @@
 .songtitle {
-  background-color: var(--bg);
-  color: var(--accent);
+  /*background-color: var(--bg);
+  color: var(--accent);/*
   /*font-family: "Times New Roman", Times, serif;*/
   text-align: center;
-  text-shadow: var(--badge-glow);
-  /*border: 1px solid darkorchid;*/
-    -webkit-background-clip: text;
+  /*text-shadow: var(--badge-glow);
+  /*border: 1px solid darkorchid;
+    -webkit-background-clip: text;*/
 }
 .duration {
-  background-color: var(--bg);
-  color: var(--accent);
+  /*background-color: var(--bg);
+  color: var(--accent);*/
   /*font-family: "Times New Roman", Times, serif;*/
   text-align: center;
-  text-shadow: var(--badge-glow);
-  /*border: 1px solid darkorchid;*/
-    -webkit-background-clip: text;
+  /*text-shadow: var(--badge-glow);
+  /*border: 1px solid darkorchid;
+    -webkit-background-clip: text;*/
 }
 .ikirwrap {
   position: relative;
@@ -34,7 +34,7 @@
   width: 512px;
   text-align: center;
   display: inline-block;
-  box-shadow: var(--badge-glow);
+  /*box-shadow: var(--badge-glow);*/
 }
 
 .controlbutton {
@@ -45,12 +45,12 @@
   background: var(--bg);
   display: inline-block;
   box-shadow  : none;
-  border: 1px solid var(--accent);
+  border: 1px solid black;
 }
 
 .controlbutton:hover {
-  background: var(--bg-light);
-  box-shadow  : inset var(--badge-glow);
+  /*background: var(--bg-light);
+  /*box-shadow  : inset var(--badge-glow);*/
 }
 
 .controlimage {
@@ -65,7 +65,7 @@
 }
 .songbutton {
   line-height: 2;
-  background: var(--bg);
+  /*background: var(--bg);*/
   display: inline-block;
   box-shadow  : none;
   /*border: 1px solid var(--accent);*/
@@ -73,8 +73,8 @@
   position: relative;
 }
 .songbutton:hover {
-  background: var(--bg-light);
-  box-shadow  : inset var(--badge-glow);
+  /*background: var(--bg-light);
+  box-shadow  : inset var(--badge-glow);*/
 }
 iframe {
   z-index: -10; 
@@ -86,7 +86,7 @@ iframe {
   position: relative;
   height: 15px;
   border-radius: 5px;  
-  background: var(--bg-light);
+  /*background: var(--bg-light);*/
   outline: none;
   text-align: center;
   display: inline-block;
@@ -101,22 +101,17 @@ iframe {
   width: 25px;
   height: 25px;
   border-radius: 50%; 
-  background: var(--bg);
+  /*background: var(--bg);*/
   cursor: pointer;
-  outline: var(--badge-border);
-  box-shadow: var(--badge-glow);
+  /*outline: var(--badge-border);
+  box-shadow: var(--badge-glow);*/
   transition: background 0.5s;
 }
-.volumeslider::-webkit-slider-thumb:hover {
-  background: var(--accent);
-}
-.volumeslider::-webkit-slider-thumb:active {
-  background: var(--accent-bright);
-}
+
 .volumeslider::-moz-range-thumb {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: var(--accent);
+  /*background: var(--accent);*/
   cursor: pointer;
 }
