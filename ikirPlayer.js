@@ -4,7 +4,7 @@ var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 //playlist = JSON.parse(document.currentScript.getAttribute('playlist'));
-fetch("playlist.txt")
+fetch("https://raw.githubusercontent.com/RamenGuy/IkirPlayer/main/playlist.txt")
   .then((res) => res.text())
   .then((text) => {
       playlist = JSON.parse(text);
@@ -42,14 +42,14 @@ function onPlayerStateChange(event) {
   if (player.getPlayerState() == 0) {
     controller.nextSong(); 
     var pbutton = document.getElementById("pausebuttonimage");
-    pbutton.src = "/assets/forward.png"; 
+    pbutton.src = "https://raw.githubusercontent.com/RamenGuy/IkirPlayer/main/assets/forward.png"; 
   }
   if (player.getPlayerState() == 2 || player.getPlayerState() == -1) {
     var pbutton = document.getElementById("pausebuttonimage");
-    pbutton.src = "/assets/forward.png"; 
+    pbutton.src = "https://raw.githubusercontent.com/RamenGuy/IkirPlayer/main/assets/forward.png"; 
   } else {
   var pbutton = document.getElementById("pausebuttonimage");
-    pbutton.src = "/assets/pause.png"; 
+    pbutton.src = "https://raw.githubusercontent.com/RamenGuy/IkirPlayer/main/assets/pause.png"; 
   }
 }
       
@@ -79,12 +79,12 @@ controller.init = function() {
   title.className = "songtitle";
   title.innerText = "Not Playing";
    
-  var prev = document.createElement("a");https://neocities.org/site_files/text_editor?filename=ikirPlayer2.js#
+  var prev = document.createElement("a");
   prev.id = "prevbutton";
   prev.className = "controlbutton";
   var prev_img = document.createElement("img");
   prev_img.className = "controlimage";
-  prev_img.src = "/assets/back.png";
+  prev_img.src = "https://raw.githubusercontent.com/RamenGuy/IkirPlayer/main/assets/back.png";
   prev_img.alt = "Previous Song";
   prev_img.title = "Previous Song"
   //prev_img.width = 64;
@@ -99,7 +99,7 @@ controller.init = function() {
   var pause_img = document.createElement("img");
   pause_img.id = "pausebuttonimage";
   pause_img.className = "controlimage";
-  pause_img.src = "/assets/pause.png";
+  pause_img.src = "https://raw.githubusercontent.com/RamenGuy/IkirPlayer/main/assets/pause.png";
   pause_img.alt = "Pause";
   pause_img.title = "Pause"
   //pause_img.width = 64;
@@ -113,7 +113,7 @@ controller.init = function() {
   next.className = "controlbutton";
   var next_img = document.createElement("img");
   next_img.className = "controlimage";
-  next_img.src = "/assets/forward.png";
+  next_img.src = "https://raw.githubusercontent.com/RamenGuy/IkirPlayer/main/assets/forward.png";
   next_img.alt = "Next Song";
   next_img.title = "Next Song"
   //next_img.width = 64;
@@ -180,11 +180,11 @@ controller.togglePlayback = function () {
   if (player.getPlayerState() == 2 || player.getPlayerState() == -1) {
     player.playVideo();
     var pbutton = document.getElementById("pausebuttonimage");
-    pbutton.src = "/assets/pause.png";
+    pbutton.src = "https://raw.githubusercontent.com/RamenGuy/IkirPlayer/main/assets/pause.png";
   } else {
     player.pauseVideo();
     var pbutton = document.getElementById("pausebuttonimage");
-    pbutton.src = "/assets/forward.png";
+    pbutton.src = "https://raw.githubusercontent.com/RamenGuy/IkirPlayer/main/assets/forward.png";
   }
 }
     
