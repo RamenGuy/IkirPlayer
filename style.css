@@ -4,7 +4,6 @@ body {
   font-family: Consolas;
   text-align: start;
   z-index: 0;
-  opacity: 0;
   transition: opacity .5s;
   -webkit-background-clip: text;
 }
