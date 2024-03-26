@@ -42,14 +42,14 @@ function onPlayerStateChange(event) {
   if (player.getPlayerState() == 0) {
     controller.nextSong(); 
     var pbutton = document.getElementById("pausebuttonimage");
-    pbutton.src = "/ikir/forward.png"; 
+    pbutton.src = "/assets/forward.png"; 
   }
   if (player.getPlayerState() == 2 || player.getPlayerState() == -1) {
     var pbutton = document.getElementById("pausebuttonimage");
-    pbutton.src = "/ikir/forward.png"; 
+    pbutton.src = "/assets/forward.png"; 
   } else {
   var pbutton = document.getElementById("pausebuttonimage");
-    pbutton.src = "/ikir/pause.png"; 
+    pbutton.src = "/assets/pause.png"; 
   }
 }
       
@@ -84,7 +84,7 @@ controller.init = function() {
   prev.className = "controlbutton";
   var prev_img = document.createElement("img");
   prev_img.className = "controlimage";
-  prev_img.src = "/ikir/back.png";
+  prev_img.src = "/assets/back.png";
   prev_img.alt = "Previous Song";
   prev_img.title = "Previous Song"
   //prev_img.width = 64;
@@ -99,7 +99,7 @@ controller.init = function() {
   var pause_img = document.createElement("img");
   pause_img.id = "pausebuttonimage";
   pause_img.className = "controlimage";
-  pause_img.src = "/ikir/pause.png";
+  pause_img.src = "/assets/pause.png";
   pause_img.alt = "Pause";
   pause_img.title = "Pause"
   //pause_img.width = 64;
@@ -113,7 +113,7 @@ controller.init = function() {
   next.className = "controlbutton";
   var next_img = document.createElement("img");
   next_img.className = "controlimage";
-  next_img.src = "/ikir/forward.png";
+  next_img.src = "/assets/forward.png";
   next_img.alt = "Next Song";
   next_img.title = "Next Song"
   //next_img.width = 64;
@@ -180,11 +180,11 @@ controller.togglePlayback = function () {
   if (player.getPlayerState() == 2 || player.getPlayerState() == -1) {
     player.playVideo();
     var pbutton = document.getElementById("pausebuttonimage");
-    pbutton.src = "/ikir/pause.png";
+    pbutton.src = "/assets/pause.png";
   } else {
     player.pauseVideo();
     var pbutton = document.getElementById("pausebuttonimage");
-    pbutton.src = "/ikir/forward.png";
+    pbutton.src = "/assets/forward.png";
   }
 }
     
