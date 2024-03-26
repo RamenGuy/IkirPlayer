@@ -1,32 +1,27 @@
 body {
-  background-color: black;
-  color: white;
-  font-family: Consolas;
+  background-color: white;
+  color: black;
+  font-family: Arial;
   text-align: start;
   z-index: 0;
-  transition: opacity .5s;
-  -webkit-background-clip: text;
 }
 
-/* width */
+/* 
 ::-webkit-scrollbar {
   width: 20px;
   position: relative;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   border-radius: 10px;
 }
  
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--accent); 
   border-radius: 10px;
   transition: background .5s;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent-bright);
-}
+}*/
