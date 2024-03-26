@@ -1,6 +1,6 @@
 [
       
-      {"title":"KÆDO - Maybe It Ain&apos;t So Bad","url":"https://www.youtube.com/watch?v=sJBwdf660b0"},
+      {"title":"KÆDO - Maybe It Ain't So Bad","url":"https://www.youtube.com/watch?v=sJBwdf660b0"},
       {"title":"Shoji Meguro - Beneath the Mask -rain, instrumental version-","url":"https://www.youtube.com/watch?v=mEpsyvKCV3k"},
       {"title":"Chris Christodoulou - The Rain Formerly Known As Purple","url":"https://www.youtube.com/watch?v=EGXPAoyP_cg"},
       {"title":"Chris Christodoulou - They Might As Well Be Dead","url":"https://www.youtube.com/watch?v=VTJcLE_VVX8"},
