@@ -68,6 +68,7 @@
   background: var(--bg);
   display: inline-block;
   box-shadow  : none;
+  color: var(--fg);
   /*border: 1px solid var(--accent);*/
   width: 100%;
   position: relative;
