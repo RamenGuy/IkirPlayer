@@ -1,6 +1,6 @@
 body {
-  background-color: var(--bg);
-  color: var(--fg);
+  background-color: black;
+  color: white;
   font-family: Consolas;
   text-align: start;
   z-index: 0;
