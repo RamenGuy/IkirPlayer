@@ -42,14 +42,14 @@
   line-height: 32px;
   width: 16px;
   height: 32px;
-  background: white;
+  background: gray;
   display: inline-block;
   box-shadow  : none;
   border: 1px solid black;
 }
 
 .controlbutton:hover {
-  background: gray;
+  background: dimgray;
   /*box-shadow  : inset var(--badge-glow);*/
 }
 
