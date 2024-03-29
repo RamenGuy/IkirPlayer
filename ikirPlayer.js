@@ -3,8 +3,8 @@ tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-//playlist = JSON.parse(document.currentScript.getAttribute('playlist'));
-fetch("playlist.txt")
+var playlistSrc = document.currentScript.getAttribute('playlist');
+fetch(playlistSrc)
   .then((res) => res.text())
   .then((text) => {
       playlist = JSON.parse(text);
