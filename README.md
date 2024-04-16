@@ -9,3 +9,7 @@ Read through [Getting Started](https://github.com/RamenGuy/IkirPlayer/wiki/Getti
 Want to support development? Add our badge to your site and link it here! (88x31)
 
 ![IkirPlayer badge](/badge.png)
+
+Alternatively, add a blinkie! (150x20)
+
+![IkirPlayer blinkie](/blinkie.gif)
