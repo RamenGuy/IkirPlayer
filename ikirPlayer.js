@@ -133,6 +133,7 @@ controller.init = function() {
   volume.type = "range";
   volume.min = "0";
   volume.max = "100";
+  volume.value = "100";
   volume.oninput = function() {
     player.setVolume(this.value);
   }
