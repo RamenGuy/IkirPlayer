@@ -1,6 +1,7 @@
 # IkirPlayer
 Open-source pure-JavaScript audio player for personal webpages.
 - Makes use of the YouTube IFrame API.
+- Can also play `.mp3`, `.ogg`, and `.wav` files.
 
 View the template/demo page [here](https://ramenguy.github.io/IkirPlayer/).
 
